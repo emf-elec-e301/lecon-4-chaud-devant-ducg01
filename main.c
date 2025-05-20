@@ -25,15 +25,27 @@ int main(void)
     // VOTRE CODE CI-DESSOUS
     // INSTRUCTIONS EXECUTEES UNE SEULE FOIS AU DEMARRAGE
     //----------------------------------------------------------
+    int yeux
+    while(1){ 
+            yeux = ultrason_distance();   
+         if (yeux>=5) 
+         {
+             buzzer_sing(SING_CONFUSED);
+         }
+         else if (yeux>=10)
+         {
+             buzzer_sing(SING_SAD);
+         }
+         else (yeux>=15)
+         {
+             buzzer_sing(SING_HAPPY);
+         }
+         
+    }       
+                
+                
     
-    while(1){
-        //----------------------------------------------------------
-        // VOTRE CODE CI-DESSOUS
-        // INSTRUCTIONS EXECUTEES EN BOUCLE INDEFINIMENT
-        //----------------------------------------------------------
-        
-    }
-}
+
 //----------------------------------------------------------
 // FIN DU CODE
-//----------------------------------------------------------
+//----------------------------------------------------------    
